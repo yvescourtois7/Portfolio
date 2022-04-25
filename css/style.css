@@ -1,0 +1,76 @@
+/*************** IMPORTS ***************/
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;700&display=swap");
+/*************** VARIABLES ***************/
+/*************** STYLES ***************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400; }
+
+body {
+  background-color: #f8f8f8; }
+
+a {
+  font-weight: 200;
+  text-decoration: none;
+  color: #ccc; }
+  a:hover {
+    color: #454545; }
+
+nav a.nav-link {
+  padding: 0.5rem;
+  color: #ccc; }
+  nav a.nav-link:hover {
+    color: #454545; }
+
+nav a.active {
+  color: #454545; }
+
+.wrapper {
+  padding: 3vw; }
+  .wrapper header {
+    width: 100%; }
+    .wrapper header .header-container {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr auto 1fr; }
+      .wrapper header .header-container .header-left {
+        display: flex; }
+      .wrapper header .header-container .header-center {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+        .wrapper header .header-container .header-center .logo {
+          padding: 0.5rem;
+          font-size: 1.4rem;
+          text-transform: uppercase;
+          letter-spacing: 0.2rem; }
+          .wrapper header .header-container .header-center .logo a {
+            color: #454545;
+            font-weight: 500; }
+      .wrapper header .header-container .header-right {
+        display: flex;
+        justify-content: flex-end; }
+        .wrapper header .header-container .header-right .social-bar a {
+          padding: 0.5rem; }
+  .wrapper main {
+    height: 75vh; }
+    .wrapper main .site-title {
+      padding: 13vw;
+      display: flex;
+      align-items: center;
+      text-align: center; }
+      .wrapper main .site-title h2 {
+        font-weight: 700; }
+  .wrapper footer .footer-container {
+    display: flex;
+    text-align: center; }
+    .wrapper footer .footer-container p {
+      font-size: 0.9rem; }
+      .wrapper footer .footer-container p a {
+        color: #454545; }
+      .wrapper footer .footer-container p span {
+        margin-right: 0.5rem;
+        color: #ccc; }
