@@ -3,11 +3,33 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
+@import "../fontawesome/scss/fontawesome.scss";
+@import "../fontawesome/scss/solid.scss";
+@import "../fontawesome/scss/brands.scss";
 
 /*************** VARIABLES ***************/
 $primary-font-color: #454545;
 $secondary-font-color: #ccc;
+$fa-font-path: "../fontawesome/webfonts";
 $breakpoint-tablet: 768px;
+
+.twitter {
+    @extend %fa-icon;
+    @extend .fab;
+
+    &:before {
+        content: fa-content($fa-var-twitter);
+    }
+}
+
+.instagram {
+    @extend %fa-icon;
+    @extend .fab;
+
+    &:before {
+        content: fa-content($fa-var-instagram);
+    }
+}
 
 /*************** STYLES ***************/
 * {
@@ -34,8 +56,6 @@ a {
 
 }
 
-
-
 nav {
     a {
         &.nav-link {
@@ -52,7 +72,6 @@ nav {
         }
     }
 }
-
 
 .wrapper {
     padding: 3vw;

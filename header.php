@@ -41,8 +41,8 @@
 				</div>
 				<div class="header-right">
 					<div class="social-bar">
-						<a href="#">Twitter</a>
-						<a href="#">Instagram</a>
+						<a href="#"><i class="twitter"></i></a>
+						<a href="#"><i class="instagram"></i></a>
 					</div>
 				</div>
 			</div>
