@@ -1,16 +1,21 @@
 /*************** IMPORTS ***************/
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;500;700&display=swap');
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
 /*************** VARIABLES ***************/
 $primary-font-color: #454545;
 $secondary-font-color: #ccc;
+$breakpoint-tablet: 768px;
 
 /*************** STYLES ***************/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Mulish',
+        sans-serif;
     font-weight: 400;
 }
 
@@ -29,6 +34,8 @@ a {
 
 }
 
+
+
 nav {
     a {
         &.nav-link {
@@ -46,6 +53,7 @@ nav {
     }
 }
 
+
 .wrapper {
     padding: 3vw;
 
@@ -57,8 +65,16 @@ nav {
             align-items: center;
             grid-template-columns: 1fr auto 1fr;
 
+            @media (max-width: $breakpoint-tablet) {
+                grid-template-columns: auto;
+            }
+
             .header-left {
                 display: flex;
+
+                @media (max-width: $breakpoint-tablet) {
+                    justify-content: center;
+                }
             }
 
             .header-center {
@@ -83,6 +99,10 @@ nav {
                 display: flex;
                 justify-content: flex-end;
 
+                @media (max-width: $breakpoint-tablet) {
+                    justify-content: center;
+                }
+
                 .social-bar {
                     a {
                         padding: 0.5rem;
@@ -94,6 +114,7 @@ nav {
 
     main {
         height: 75vh;
+
         .site-title {
             padding: 13vw;
             display: flex;
@@ -113,6 +134,7 @@ nav {
 
             p {
                 font-size: 0.9rem;
+
                 a {
                     color: $primary-font-color;
                 }
