@@ -7745,6 +7745,10 @@ nav a.active {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     border-radius: 0.5rem;
     background-color: #fff; }
+    @media (max-width: 768px) {
+      .wrapper .wpcf7 {
+        width: auto;
+        padding: 1.5rem; } }
     .wrapper .wpcf7 p {
       margin: 0; }
     .wrapper .wpcf7 .title {
@@ -7753,6 +7757,9 @@ nav a.active {
     .wrapper .wpcf7 input {
       padding: 0.2rem 0.5rem;
       border: 1px solid #ccc; }
+      @media (max-width: 768px) {
+        .wrapper .wpcf7 input {
+          width: 100%; } }
       .wrapper .wpcf7 input[type=submit] {
         width: 6.5rem;
         position: sticky;
@@ -7762,7 +7769,13 @@ nav a.active {
         color: #fff;
         border-radius: 0.3rem;
         background-color: #DA3E52; }
+        @media (max-width: 768px) {
+          .wrapper .wpcf7 input[type=submit] {
+            width: 100%; } }
     .wrapper .wpcf7 textarea {
       height: 6.5rem;
       padding: 0.5rem;
       border: 1px solid #ccc; }
+      @media (max-width: 768px) {
+        .wrapper .wpcf7 textarea {
+          width: 100%; } }

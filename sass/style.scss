@@ -188,6 +188,11 @@ nav {
         border-radius: 0.5rem;
         background-color: #fff;
 
+        @media (max-width: $breakpoint-tablet) {
+            width: auto;
+            padding: 1.5rem;
+        }
+
         p {
             margin: 0;
         }
@@ -200,6 +205,9 @@ nav {
         input {
             padding: 0.2rem 0.5rem;
             border: 1px solid $secondary-font-color;
+            @media (max-width: $breakpoint-tablet) {
+                width: 100%;
+            }
             &[type=submit] {
                 width: 6.5rem;
                 position: sticky;
@@ -209,6 +217,9 @@ nav {
                 color: #fff;
                 border-radius: 0.3rem;
                 background-color: #DA3E52;
+                @media (max-width: $breakpoint-tablet) {
+                    width: 100%;
+                }
             }
         }
 
@@ -216,6 +227,9 @@ nav {
             height: 6.5rem;
             padding: 0.5rem;
             border: 1px solid $secondary-font-color;
+            @media (max-width: $breakpoint-tablet) {
+                width: 100%;
+            }
         }
     }
 }
