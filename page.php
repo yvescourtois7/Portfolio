@@ -15,18 +15,19 @@
 
 get_header();
 ?>
-	<main>
-		<div class="site-title">
-			<div class="container">
-				<h2>
-					Hey, I'm a freelance web-developer from Berlin. <br />
-					Soon you will find here a selection of my
-					latests projects.
-					<br />
-					:)
-				</h2>
-			</div>
+<main>
+	<div class="site-title">
+		<div class="container">
+			
+
+			<?php if (have_posts()) : while (have_posts()) : the_post();
+					the_content();
+				endwhile;
+			else : ?>
+				<p>Sorry, no posts matched your criteria.</p>
+			<?php endif; ?>
 		</div>
-	</main>
+	</div>
+</main>
 <?php
 get_footer();

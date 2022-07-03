@@ -23,6 +23,7 @@
 .fab,
 .twitter,
 .instagram,
+.github,
 .fa-brands {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -32,7 +33,7 @@
   line-height: 1;
   text-rendering: auto; }
 
-.twitter, .instagram {
+.twitter, .instagram, .github {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -6222,6 +6223,7 @@ readers do not read off random characters that represent icons */
 .fab,
 .twitter,
 .instagram,
+.github,
 .fa-brands {
   font-family: 'Font Awesome 6 Brands';
   font-weight: 400; }
@@ -7643,8 +7645,12 @@ readers do not read off random characters that represent icons */
 .twitter:before {
   content: "\f099"; }
 
+/*************** ICONS ***************/
 .instagram:before {
   content: "\f16d"; }
+
+.github:before {
+  content: "\f09b"; }
 
 /*************** STYLES ***************/
 * {
@@ -7710,9 +7716,9 @@ nav a.active {
         .wrapper header .header-container .header-right .social-bar a {
           padding: 0.5rem; }
   .wrapper main {
-    height: 75vh; }
+    height: 100%;
+    padding: 8rem 0 4rem 0; }
     .wrapper main .site-title {
-      padding: 13vw;
       display: flex;
       align-items: center;
       text-align: center; }
@@ -7728,3 +7734,35 @@ nav a.active {
       .wrapper footer .footer-container p span {
         margin-right: 0.5rem;
         color: #ccc; }
+  .wrapper .wpcf7 {
+    width: fit-content;
+    padding: 3rem;
+    margin: auto;
+    margin-top: 5rem;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: 0.5rem;
+    background-color: #fff; }
+    .wrapper .wpcf7 p {
+      margin: 0; }
+    .wrapper .wpcf7 .title {
+      font-size: 2rem;
+      font-weight: 700; }
+    .wrapper .wpcf7 input {
+      padding: 0.2rem 0.5rem;
+      border: 1px solid #ccc; }
+      .wrapper .wpcf7 input[type=submit] {
+        width: 6.5rem;
+        position: sticky;
+        left: calc(50% - 3.25rem);
+        padding: 0.5rem 1rem;
+        margin-top: 1.5rem;
+        color: #fff;
+        border-radius: 0.3rem;
+        background-color: #DA3E52; }
+    .wrapper .wpcf7 textarea {
+      height: 6.5rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc; }

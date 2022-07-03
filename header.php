@@ -31,7 +31,7 @@
 					<nav class="nav">
 						<a class="nav-link active" aria-current="page" href="#">Home</a>
 						<a class="nav-link" href="#">Privacy</a>
-						<a class="nav-link" href="#">Contact</a>
+						<a class="nav-link" href="#contact">Contact</a>
 					</nav>
 				</div>
 				<div class="header-center">
@@ -43,6 +43,7 @@
 					<div class="social-bar">
 						<a href="#"><i class="twitter"></i></a>
 						<a href="#"><i class="instagram"></i></a>
+						<a href="https://github.com/yvescourtois7" target="_blank"><i class="github"></i></a>
 					</div>
 				</div>
 			</div>
