@@ -41,8 +41,8 @@
 				</div>
 				<div class="header-right">
 					<div class="social-bar">
-						<a href="#"><i class="twitter"></i></a>
-						<a href="#"><i class="instagram"></i></a>
+						<a href="https://twitter.com/YvesCourtois9" target="_blank"><i class="twitter"></i></a>
+						<a href="https://instagram.com/yvescourtois11" target="_blank"><i class="instagram"></i></a>
 						<a href="https://github.com/yvescourtois7" target="_blank"><i class="github"></i></a>
 					</div>
 				</div>
