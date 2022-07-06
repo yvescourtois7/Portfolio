@@ -114,6 +114,11 @@ function portfolio_content_width() {
 }
 add_action( 'after_setup_theme', 'portfolio_content_width', 0 );
 
+function currentYear( $args ){
+    return date('Y');
+}
+add_shortcode( 'year', 'currentYear' );
+
 /**
  * Register widget area.
  *
@@ -127,6 +132,18 @@ function portfolio_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here.', 'portfolio' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Footer', 'portfolio' ),
+			'id'            => 'footer-1',
+			'description'   => esc_html__( 'Add widgets here.', 'portfolio' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>',
 			'before_title'  => '<h2 class="widget-title">',
 			'after_title'   => '</h2>',
 		)

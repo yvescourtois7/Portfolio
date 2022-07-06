@@ -14,14 +14,12 @@
 
 <footer>
 	<div class="footer-container">
-		<div class="container">
-			<p><span>&#xA9; 2022</span><a href="#">Yves Courtois</a></p>
+		<div class="container">	
+				<?php if(dynamic_sidebar('footer-1')) : else : endif; ?>
 		</div>
 	</div>
 </footer>
 </div>
 <?php wp_footer(); ?>
-
 </body>
-
 </html>
