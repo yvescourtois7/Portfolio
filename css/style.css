@@ -7670,14 +7670,20 @@ a {
   a:hover {
     color: #454545; }
 
-nav a.nav-link {
-  padding: 0.5rem;
-  color: #ccc; }
-  nav a.nav-link:hover {
+.menu-portfolio-container ul {
+  list-style-type: none;
+  display: inline-flex; }
+  .menu-portfolio-container ul li {
+    margin-left: 1rem; }
+    .menu-portfolio-container ul li:first-child {
+      margin-left: 0; }
+    .menu-portfolio-container ul li a.nav-link {
+      padding: 0.5rem;
+      color: #ccc; }
+      .menu-portfolio-container ul li a.nav-link:hover {
+        color: #454545; }
+  .menu-portfolio-container ul .current_page_item a {
     color: #454545; }
-
-nav a.active {
-  color: #454545; }
 
 .wrapper {
   padding: 3vw; }

@@ -28,11 +28,34 @@
 		<header>
 			<div class="header-container">
 				<div class="header-left">
-					<nav class="nav">
+					<?php
+					$defaults = array(
+						'menu'                 => '',
+						'container'            => 'nav',
+						'container_class'      => '',
+						'container_id'         => '',
+						'container_aria_label' => '',
+						'menu_class'           => 'menu',
+						'menu_id'              => '',
+						'echo'                 => true,
+						'fallback_cb'          => 'wp_page_menu',
+						'before'               => '',
+						'after'                => '',
+						'link_before'          => '',
+						'link_after'           => '',
+						'items_wrap'           => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+						'item_spacing'         => 'preserve',
+						'depth'                => 0,
+						'walker'               => '',
+						'theme_location'       => '',
+					);
+					wp_nav_menu($args);
+					?>
+					<!--<nav class="nav">
 						<a class="nav-link active" aria-current="page" href="#">Home</a>
 						<a class="nav-link" href="#">Privacy</a>
 						<a class="nav-link" href="#contact">Contact</a>
-					</nav>
+					</nav> -->
 				</div>
 				<div class="header-center">
 					<div class="logo">
