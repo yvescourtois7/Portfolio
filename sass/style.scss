@@ -160,6 +160,7 @@ a {
     }
 
     main {
+        max-width: 768px;
         height: 100%;
         padding: 8rem 0 4rem 0;
 
@@ -170,6 +171,12 @@ a {
 
             h2 {
                 font-weight: 700;
+            }
+        }
+        .privacy {
+            text-align: justify;
+            h2, h3 {
+                margin-top: 2rem;
             }
         }
     }

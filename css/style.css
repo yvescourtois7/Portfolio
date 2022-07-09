@@ -7723,6 +7723,7 @@ a {
         .wrapper header .header-container .header-right .social-bar a {
           padding: 0.5rem; }
   .wrapper main {
+    max-width: 768px;
     height: 100%;
     padding: 8rem 0 4rem 0; }
     .wrapper main .site-title {
@@ -7731,6 +7732,10 @@ a {
       text-align: center; }
       .wrapper main .site-title h2 {
         font-weight: 700; }
+    .wrapper main .privacy {
+      text-align: justify; }
+      .wrapper main .privacy h2, .wrapper main .privacy h3 {
+        margin-top: 2rem; }
   .wrapper footer .footer-container {
     display: flex;
     text-align: center; }
