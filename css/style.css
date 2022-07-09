@@ -7672,7 +7672,8 @@ a {
 
 .menu-portfolio-container ul {
   list-style-type: none;
-  display: inline-flex; }
+  display: inline-flex;
+  padding-left: 0; }
   .menu-portfolio-container ul li {
     margin-left: 1rem; }
     .menu-portfolio-container ul li:first-child {
@@ -7733,6 +7734,9 @@ a {
   .wrapper footer .footer-container {
     display: flex;
     text-align: center; }
+    @media (max-width: 768px) {
+      .wrapper footer .footer-container {
+        margin-bottom: 3rem; } }
     .wrapper footer .footer-container p {
       font-size: 0.9rem; }
       .wrapper footer .footer-container p a {

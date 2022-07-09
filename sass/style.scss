@@ -70,6 +70,7 @@ a {
     ul {
         list-style-type: none;
         display: inline-flex;
+        padding-left: 0;
 
         li {
             margin-left: 1rem;
@@ -177,6 +178,9 @@ a {
         .footer-container {
             display: flex;
             text-align: center;
+            @media (max-width: $breakpoint-tablet) {
+                margin-bottom: 3rem;
+            }
 
             p {
                 font-size: 0.9rem;
