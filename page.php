@@ -19,7 +19,7 @@ get_header();
 	<div class="site-title">
 		<div class="container">
 			<?php if(is_page( 'Privacy' )) { ?>
-				<h1 class="site-title"><?php the_title(); ?></h1>
+				<h1 class="page-title"><?php the_title(); ?></h1>
 			<?php } ?>
 			<?php if (have_posts()) : while (have_posts()) : the_post();
 					the_content();

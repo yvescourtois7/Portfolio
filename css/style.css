@@ -7733,9 +7733,12 @@ a {
       text-align: center; }
       .wrapper main .site-title h2 {
         font-weight: 700; }
+    .wrapper main .page-title {
+      font-size: 3.5rem; }
     .wrapper main .privacy {
       text-align: justify; }
-      .wrapper main .privacy h2, .wrapper main .privacy h3 {
+      .wrapper main .privacy h2,
+      .wrapper main .privacy h3 {
         margin-top: 2rem; }
   .wrapper footer .footer-container {
     display: flex;

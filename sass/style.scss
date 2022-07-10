@@ -174,9 +174,16 @@ a {
                 font-weight: 700;
             }
         }
+
+        .page-title {
+            font-size: 3.5rem;
+        }
+
         .privacy {
             text-align: justify;
-            h2, h3 {
+
+            h2,
+            h3 {
                 margin-top: 2rem;
             }
         }
@@ -186,6 +193,7 @@ a {
         .footer-container {
             display: flex;
             text-align: center;
+
             @media (max-width: $breakpoint-tablet) {
                 margin-bottom: 3rem;
             }
