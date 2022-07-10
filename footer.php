@@ -21,5 +21,9 @@
 </footer>
 </div>
 <?php wp_footer(); ?>
+<script>
+	var elem = document.getElementById("menu-item-17");
+    elem.classList.remove("current_page_item");
+</script>
 </body>
 </html>
