@@ -18,8 +18,9 @@ get_header();
 <main>
 	<div class="site-title">
 		<div class="container">
-			<h1 class="site-title"><?php wp_title(); ?></h1>
-
+			<?php if(is_page( 'Privacy' )) { ?>
+				<h1 class="site-title"><?php wp_title(); ?></h1>
+			<?php } ?>
 			<?php if (have_posts()) : while (have_posts()) : the_post();
 					the_content();
 				endwhile;
